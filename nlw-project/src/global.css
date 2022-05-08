@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
     /* @apply bg-[#09090A] text-zinc-100 */
-    @apply bg-[#CCC] text-zinc-100
+    @apply bg-[#CCC] text-zinc-100;
+    background-image: url(assets/background1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
