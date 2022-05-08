@@ -1,7 +1,9 @@
 import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { TypeOfFeedback, feedbackTypes } from ".."
+import { api } from "../../../Services/api";
 import { CloseButton } from "../../CloseButton"
+import { Loading } from "../../Loading";
 import { ScreenshotButton } from "../ScreenshotButton";
 
 interface FeedBackContentProps{
@@ -18,12 +20,20 @@ export function FeedbackContent({
 
     const [screenshot, setScreenshot] = useState<string | null>(null)
     const [comment, setComment] = useState('');
+    const [isSendingFeedback, setIsSendingFeedback] = useState(false);
     
     const feedBackTypeInfo = feedbackTypes[feedbackType];
 
-    function handleSubmitComment(event: FormEvent){
+    async function handleSubmitComment(event: FormEvent){
         event.preventDefault()
-        console.log(screenshot,comment)
+        setIsSendingFeedback(true)
+        
+        await api.post('/feedbacks',{
+            type: feedbackType,
+            comment,
+            screenshot,
+        })
+        setIsSendingFeedback(false)
         onFeedbackSent()
     }
 
@@ -61,7 +71,7 @@ export function FeedbackContent({
                             disabled={comment.length === 0}
                             className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
                         >
-                            Enviar sugestão
+                            {isSendingFeedback ? <Loading /> : 'Enviar sugestão'}
                         </button>
                     </footer>
 
