@@ -1,6 +1,6 @@
 import { IoLogoCodepen, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io'
-import { Link } from 'react-router-dom'
 import perfilImg from '../../assets/perfil.png'
+import Header from '../../compononents/Header'
 import { Widget } from '../../compononents/Widget'
 
 export function Home() {
@@ -8,18 +8,7 @@ export function Home() {
     <div>
       <main className="bg-[#032518] grid grid-cols-2 w-screen h-screen ">
         <div className=" w-auto bg-gradient-to-r from-[#008852] via-[#00693f] to-[#032518] h-screen text-justify text-xl my-auto px-8 flex items-center justify-center flex-col">
-          <header className="absolute top-0">
-            <ul className="flex gap-4 mt-4 underline">
-
-              <Link to="/tech">
-                <li>Tecnologias</li>
-              </Link>
-              <Link to="/projetos">
-                <li>Projetos</li>
-              </Link>
-
-            </ul>
-          </header>
+          <Header />
           <h1 className="text-xl font-bold text-center mb-4 ">
             Olá! Eu sou Alexandre Noguez
           </h1>
@@ -35,17 +24,21 @@ export function Home() {
             alt="foto do perfil de Alexandre"
           />
           <ul className="absolute right-0 ">
-            <Link to="https://github.com/AlexandreNoguez">
+            <a href="https://github.com/AlexandreNoguez" target="_blank">
               <li>
                 <IoLogoGithub className="w-10 h-10" />
               </li>
-            </Link>
-            <li>
-              <IoLogoCodepen className="w-10 h-10" />
-            </li>
-            <li>
-              <IoLogoLinkedin className="w-10 h-10" />
-            </li>
+            </a>
+            <a href="https://codepen.io/alexandrenoguez/full/OJzzLwz" target="_blank">
+              <li>
+                <IoLogoCodepen className="w-10 h-10" />
+              </li>
+            </a>
+            <a href="https://www.linkedin.com/in/alexandre-noguez/" target="_blank">
+              <li>
+                <IoLogoLinkedin className="w-10 h-10" />
+              </li>
+            </a>
           </ul>
         </div>
       </main>

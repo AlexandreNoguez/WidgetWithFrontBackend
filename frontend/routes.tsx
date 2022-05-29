@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './src/Pages/Home'
 import Projects from './src/Pages/Projects'
-import Technologies from './src/Pages/Technologies'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Technologies from './src/Pages/Projects';
 
 const MainRoutes: React.FC = () => {
 
@@ -12,6 +12,7 @@ const MainRoutes: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/projetos" element={<Projects />} />
                 <Route path="/tech" element={<Technologies />} />
+                <Route path="/*" element={<Home />} />
             </Routes>
         </BrowserRouter>
     )
