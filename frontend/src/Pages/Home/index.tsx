@@ -13,7 +13,7 @@ export function Home() {
             Olá! Eu sou Alexandre Noguez
           </h1>
           <p>
-            Sou um entusiasta da arte e da tecnologia. No momento venho buscando aprimorar minhas habilidades, desenvolvendo aplicações no front-end e back-end, realizando estudos de várias tecnologias, como React, NodeJS,
+            Sou um entusiasta da arte e da tecnologia. No momento venho buscando aprimorar minhas habilidades, desenvolvendo aplicações no front-end e back-end, realizando estudos de várias tecnologias, como React, NodeJS.
           </p>
         </div>
 
