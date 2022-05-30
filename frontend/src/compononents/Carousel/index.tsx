@@ -28,15 +28,15 @@ export default function Carousel() {
 
                 <SwiperSlide>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />
-                    <p className="legend">ReactJS</p>
+                    {/* <p className="legend">ReactJS</p> */}
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
-                    <p className="legend">NodeJS</p>
+                    {/* <p className="legend">NodeJS</p> */}
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://camo.githubusercontent.com/0566752248b4b31b2c4bdc583404e41066bd0b6726f310b73e1140deefcc31ac/68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67" />
-                    <p className="legend">Express</p>
+                    {/* <p className="legend">Express</p> */}
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="https://avatars.githubusercontent.com/u/7552965?s=280&https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXU7OThk_FsW2_Jtca19h1wUYqgq50zlnTlDxN7TJ4xf9b54jhqrxE2NmQaPhqlo00BAE&usqp=CAUv=4" />
@@ -45,5 +45,3 @@ export default function Carousel() {
         </>
     );
 }
-
-export { }
