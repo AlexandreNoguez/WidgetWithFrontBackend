@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
                     <Header />
 
                     <div>
-                        <h2>Projetos em andamento</h2>
+                        <img src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?cs=srgb&dl=pexels-fernando-arcos-211122.jpg&fm=jpg" alt="imagem de um homem trabalhando em contrução" />
                     </div>
                     <Widget />
                 </div>
