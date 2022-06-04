@@ -1,6 +1,20 @@
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
+    screens: {
+        '2xl': {'max': '1535px'},
+  
+        'xl': {'max': '1279px'},
+  
+        'lg': {'max': '1023px'},
+  
+        'md': {'max': '767px'},
+  
+        'sm': {'max': '639px'},
+        'smMin': {'min': '639px'},
+
+        'xm': {'max': '500px'},
+    },
     extend: {
       colors:{
         brand: {

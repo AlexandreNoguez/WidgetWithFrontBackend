@@ -35,35 +35,35 @@ export const feedbackTypes = {
 
 export type TypeOfFeedback = keyof typeof feedbackTypes;
 
-export function WidgetForm(){
-    const [handleFeedbackType, setHandleFeedbackType] = useState<TypeOfFeedback|null>(null);
+export function WidgetForm() {
+    const [handleFeedbackType, setHandleFeedbackType] = useState<TypeOfFeedback | null>(null);
     const [feedBackSent, setFeedbackSent] = useState(false)
 
-    function handleRestartFeedback(){
+    function handleRestartFeedback() {
         setFeedbackSent(false)
         setHandleFeedbackType(null)
     }
-    return(
-        
-        <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
-          { feedBackSent ? (
-              <FeedbackSuccess onRestartRequestFeedback={handleRestartFeedback}
-            /> 
-          ) : (
-              <>
-                {!handleFeedbackType ? (
-                
-                <FeedbackType onFeedbackTypeChange={setHandleFeedbackType}/>
-            ): (
-                <FeedbackContent 
-                    feedbackType={handleFeedbackType}
-                    onRestartRequestFeedback={handleRestartFeedback}
-                    onFeedbackSent={() => setFeedbackSent(true)}    
+    return (
+
+        <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] smMin:w-auto">
+            {feedBackSent ? (
+                <FeedbackSuccess onRestartRequestFeedback={handleRestartFeedback}
                 />
+            ) : (
+                <>
+                    {!handleFeedbackType ? (
+
+                        <FeedbackType onFeedbackTypeChange={setHandleFeedbackType} />
+                    ) : (
+                        <FeedbackContent
+                            feedbackType={handleFeedbackType}
+                            onRestartRequestFeedback={handleRestartFeedback}
+                            onFeedbackSent={() => setFeedbackSent(true)}
+                        />
+                    )}
+                </>
             )}
-              </>
-          )}  
-          
+
             <footer className="text-xs text-neutral-400">
                 Desenvolvido durante NLWReturn <a className="underline underline-offset-2" href="#"></a>
             </footer>

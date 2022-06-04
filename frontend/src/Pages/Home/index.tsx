@@ -9,17 +9,17 @@ export function Home() {
       <main className="bg-[#032518] grid grid-cols-2 w-screen h-screen ">
         <div className=" w-auto bg-gradient-to-r from-[#008852] via-[#00693f] to-[#032518] h-screen text-justify text-xl my-auto px-8 flex items-center justify-center flex-col">
           <Header />
-          <h1 className="text-xl font-bold text-center mb-4 ">
+          <h1 className="text-xl font-bold text-center mb-4 xm:text-sm xm:text-left ">
             Olá! Eu sou Alexandre Noguez
           </h1>
-          <p>
+          <p className='xm:text-xs xm:text-center sm:text-sm sm:text-center md:text-base'>
             Sou um entusiasta da arte e da tecnologia. No momento venho buscando aprimorar minhas habilidades, desenvolvendo aplicações no front-end e back-end, realizando estudos de várias tecnologias, como React, NodeJS.
           </p>
         </div>
 
-        <div className="grid justify-center items-center">
+        <div className="grid justify-center items-center ">
           <img
-            className="grid justify-center items-center rounded-full w-auto h-auto bg-gradient-to-r p-[4px] from-[#005f39] via-[#003c9c] to-[#920a00]"
+            className="grid xm:w-4/6 sm:w-5/6 md:w-5/6 lg:w-5/6 justify-center items-center rounded-full w-auto h-auto bg-gradient-to-r p-[4px] from-[#005f39] via-[#003c9c] to-[#920a00]"
             src={perfilImg}
             alt="foto do perfil de Alexandre"
           />
