@@ -1,21 +1,26 @@
 import React from 'react';
-import Header from '../../compononents/Header';
-import { Widget } from '../../compononents/Widget';
 
 const Projects: React.FC = () => {
     return (
-        <div>
-            <main className="bg-[#032518] grid grid-cols-2 w-screen h-screen ">
-                <div className=" w-auto bg-gradient-to-r from-[#008852] via-[#00693f] to-[#032518] h-screen text-justify text-xl my-auto px-8 flex items-center justify-center flex-col">
-                    <Header />
+        <main className="h-4/6 bg-hero-pattern flex">
+            <div className='h-full w-full'>
+                <div className="flex flex-wrap m-auto text-justify text-xl p-8 gap-2 items-center justify-center">
 
                     <div>
-                        <img src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?cs=srgb&dl=pexels-fernando-arcos-211122.jpg&fm=jpg" alt="imagem de um homem trabalhando em contrução" />
+                        <img className='w-40' src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?cs=srgb&dl=pexels-fernando-arcos-211122.jpg&fm=jpg" alt="imagem de um homem trabalhando em contrução" />
                     </div>
-                    <Widget />
+                    <div>
+                        <img className='w-40' src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?cs=srgb&dl=pexels-fernando-arcos-211122.jpg&fm=jpg" alt="imagem de um homem trabalhando em contrução" />
+                    </div>
+                    <div>
+                        <img className='w-40' src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?cs=srgb&dl=pexels-fernando-arcos-211122.jpg&fm=jpg" alt="imagem de um homem trabalhando em contrução" />
+                    </div>
+                    <div>
+                        <img className='w-40' src="https://images.pexels.com/photos/211122/pexels-photo-211122.jpeg?cs=srgb&dl=pexels-fernando-arcos-211122.jpg&fm=jpg" alt="imagem de um homem trabalhando em contrução" />
+                    </div>
                 </div>
-            </main>
-        </div >
+            </div>
+        </main>
     )
 }
 

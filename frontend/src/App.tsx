@@ -1,20 +1,16 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./Pages/Home"
-import Projects from "./Pages/Projects"
-import Technologies from "./Pages/Technologies"
+import SocialMedia from "./compononents/SocialMedia"
+import Header from "./compononents/Header"
+import { Widget } from "./compononents/Widget"
+import AppRoutes from "./routes/appRoutes"
 
 function App() {
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projetos" element={<Projects />} />
-          <Route path="/tech" element={<Technologies />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+    <div className="bg-hero-pattern bg-cover min-h-screen justify-center items-center">
+      <Header />
+      <AppRoutes />
+      <SocialMedia />
+      <Widget />
     </div>
   )
 }

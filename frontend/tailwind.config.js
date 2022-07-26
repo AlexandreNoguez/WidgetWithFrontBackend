@@ -16,6 +16,9 @@ module.exports = {
         'xm': {'max': '500px'},
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+      },
       colors:{
         brand: {
           300: '#996DFF',
@@ -27,6 +30,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('tailwind-scrollbar'),
-
   ],
 }

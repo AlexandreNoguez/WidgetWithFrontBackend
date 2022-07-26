@@ -3,8 +3,6 @@ import { IoLogoCodepen, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import Header from '../../compononents/Header';
 import { Widget } from '../../compononents/Widget';
 
-// import { Container } from './styles';
-
 const BaseLayout: React.FC = () => {
     return (
         <div>
