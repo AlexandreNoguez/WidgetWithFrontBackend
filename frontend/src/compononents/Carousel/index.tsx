@@ -21,27 +21,28 @@ export default function Carousel() {
                     shadowOffset: 20,
                     shadowScale: 0.94,
                 }}
+
                 pagination={true}
                 modules={[EffectCube, Pagination]}
-                className="mySwiper w-60 h-60 text-center m-auto justify-center items-center xm:w-28 xm:h-28"
+                className="mySwiper w-60 h-60 text-center m-auto xm:w-28 xm:h-28"
             >
 
-                <SwiperSlide>
+                <SwiperSlide className="bg-slate-600 translate-x-1">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" className="xm:mb-10" />
                     {/* <p className="legend">ReactJS</p> */}
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="bg-slate-600">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
                     {/* <p className="legend">NodeJS</p> */}
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="bg-slate-600">
                     <img src="https://camo.githubusercontent.com/0566752248b4b31b2c4bdc583404e41066bd0b6726f310b73e1140deefcc31ac/68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="bg-slate-600">
                     <img src="https://user-images.githubusercontent.com/8939680/57233884-20344080-6fe5-11e9-8df3-0df1282e1574.png" />
                     {/* <p className="legend">Express</p> */}
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="bg-slate-600">
                     <img src="https://avatars.githubusercontent.com/u/7552965?s=280&https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXU7OThk_FsW2_Jtca19h1wUYqgq50zlnTlDxN7TJ4xf9b54jhqrxE2NmQaPhqlo00BAE&usqp=CAUv=4" />
                 </SwiperSlide>
             </Swiper>

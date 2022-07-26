@@ -7,7 +7,7 @@ import logoImg from '../../assets/img/logo1.png'
 
 const Header: React.FC = () => {
     return (
-        <header className="text-lg flex justify-between items-center xm:text-sm xm:text-center p-4 bg-slate-800">
+        <header className="text-lg flex justify-evenly items-center xm:text-sm xm:text-center p-4 bg-slate-800">
             <div className='h-10 w-10'>
                 <img className='rounded-full hover:animate-spin' src={logoImg} alt="React developer logotipo" />
             </div>

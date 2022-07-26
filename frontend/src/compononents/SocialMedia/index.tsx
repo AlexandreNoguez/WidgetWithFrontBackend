@@ -4,7 +4,7 @@ import { IoLogoGithub, IoLogoCodepen, IoLogoLinkedin } from 'react-icons/io';
 const SocialMedia: React.FC = () => {
     return (
         <nav>
-            <ul className="bg-slate-800 absolute p-5 my-auto h-full right-0 top-0 flex flex-col items-center justify-center gap-2">
+            <ul className="bg-slate-800 p-2 my-auto fixed bottom-0 w-full flex items-center justify-center gap-2">
                 <li className='hover:animate-bounce'>
                     <a href="https://github.com/AlexandreNoguez" target="_blank">
                         <IoLogoGithub className="w-10 h-10" />

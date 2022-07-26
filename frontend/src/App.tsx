@@ -6,7 +6,7 @@ import AppRoutes from "./routes/appRoutes"
 function App() {
 
   return (
-    <div className="bg-hero-pattern bg-cover min-h-screen justify-center items-center">
+    <div className="bg-slate-700 min-h-screen">
       <Header />
       <AppRoutes />
       <SocialMedia />
